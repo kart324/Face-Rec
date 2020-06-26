@@ -2,7 +2,7 @@
 
 
 
-Using Python as well as the OpenCV Library we were able to build a face recognition model from scratch and train it to recognize our own as well as the faces of celebrities in real-time video feeds. A video sample of how the project works when run can be seen <b><a href='https://drive.google.com/open?id=1YECsdJISEK1AIWVZ5NoQqeTmWYP2k5oe'>here</a></b>
+Using Python as well as the OpenCV Library I was able to build a face recognition model from scratch and train it to recognize the users' as well as the faces of celebrities in real-time video feeds. A video sample of how the project works when run can be seen <b><a href='https://drive.google.com/open?id=1YECsdJISEK1AIWVZ5NoQqeTmWYP2k5oe'>here</a></b>
 
 The Recognizer was first trained to recognize the user's face and then trained using a subset of images of celebrities taken from the Labelled Faces in the Wild (LFW) Dataset. All of these images are 250x250 in dimension and are fed as training data into the algorithm. 
 
@@ -22,9 +22,9 @@ The following were the goals set and accomplished in going through the project:
 <em><b><li>images</li></b></em>
   <p>This folder contains the images on which the data was trained. the folders in which these images are kept is the label name for the all the images in that folder. These images are obtained from the <a href="http://vis-www.cs.umass.edu/lfw/">LFW (Labelled Faces in the Wild) Dataset</a></p>
 <em><b><li>Recogniton.py</li></b></em>
-  <p>This python file uses openCV and does appropriate manipulations using the video data to highlight the face identified. It uses the pretrained model as well as the labels from the labels.pickle to showcase the predictions made based on the video input data.</p>
+  <p>This python file uses openCV and does appropriate manipulations using the video data to highlight the face identified. It uses the pretrained model from 'trainer.yml' as well as the labels from the 'labels.pickle' to showcase the predictions made based on the video input data.</p>
 <em><b><li>face_train.py</li></b></em>
-  <p>Here, the model is trained on the images in the images folder and with appropriate labels. The labels are then stored in a pickle object (namely labels.pickle) and the trained model is stored in trainer.yml for use during prediction</p>
+  <p>Here, the model is trained on the images in the images folder and with appropriate labels. The labels are then stored in a pickle object (namely labels.pickle) and the trained model is stored in 'trainer.yml' for use during prediction</p>
 </ol>
 
 <h3>Algorithm used in face detection: Haar Cascade Classifier</h3>
